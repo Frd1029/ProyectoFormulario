@@ -15,6 +15,15 @@ body{
 	border-radius: 5px;
 }
 
+.card{
+	padding: 20px;
+	margin: 20px auto;
+	border-width: 10px;
+	border-color: black;
+	border-style: outset;
+	border-radius: 3px;
+}
+
 /*Estilos para formularios*/	
 
 form{
@@ -28,7 +37,7 @@ input[type="text"], input[type="email"], input[type="password"]{
 	border-radius: 3px;
 }
 
-input[type="password"], input[type="text"]{
+input[type="password"], input[type="text"], input[type="email"]{
 	box-sizing: border-box;
 	width: 100%;
 }
@@ -40,4 +49,20 @@ button[type="submit"]{
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+}
+
+.card:hover{
+	border-color: yellow;
+	border-style: inset;
+	background-color: #FFF69C;
+}
+
+.card:click{
+	
+}
+
+@media(max-width: 400px){
+	.card{
+		border-color: red;
+	}
 }
