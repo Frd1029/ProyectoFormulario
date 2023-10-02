@@ -6,13 +6,14 @@ body{
 	background-color: #f0f0f0;
 }
 
-.container{
+.container, table{
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
+	text-align: center;
 }
 
 .card{
@@ -24,11 +25,44 @@ body{
 	border-radius: 3px;
 }
 
+table td, table th{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px 15px;
+	margin: 10px;
+	font-family: Papyrus, fantasy;
+}
+
+table{
+	border-spacing: 0;
+}
+
+table th{
+	background-color: #94B9FF;
+	font-family: Copperplate, fantasy;
+	font-weight: normal;
+	font-size: 25px;
+
+}
+
+table td{
+	background-color: #D9E6FF;
+}
+
+h3{
+	text-align: center;
+}
+
 /*Estilos para formularios*/	
 
 form{
 	text-align: center;
 }
+
+.register{
+	display: none;
+}
+
 input[type="text"], input[type="email"], input[type="password"]{
 	width: 100%;
 	padding: 10px;
@@ -42,7 +76,7 @@ input[type="password"], input[type="text"], input[type="email"]{
 	width: 100%;
 }
 
-button[type="submit"]{
+button[type="submit"], button[type="add"]{
 	background-color: #007bff;
 	color: #fff;
 	padding: 10px 20px;
@@ -51,14 +85,22 @@ button[type="submit"]{
 	cursor: pointer;
 }
 
+button[type="add"]:hover{
+	background-color: #2c4eda;
+}
+
+button[type="add"]:active + form{
+	display: block;
+}
+
 .card:hover{
 	border-color: yellow;
 	border-style: inset;
 	background-color: #FFF69C;
 }
 
-.card:click{
-	
+div a {
+	font-size: 50px;
 }
 
 @media(max-width: 400px){
@@ -66,3 +108,4 @@ button[type="submit"]{
 		border-color: red;
 	}
 }
+
