@@ -6,7 +6,9 @@ body{
 	background-color: #f0f0f0;
 }
 
+
 .container, table{
+	width: 100%;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
@@ -49,7 +51,11 @@ table td{
 	background-color: #D9E6FF;
 }
 
-h3{
+table tr td:has(img){
+	width: 200px
+}
+
+h3, h1{
 	text-align: center;
 }
 
@@ -89,9 +95,6 @@ button[type="add"]:hover{
 	background-color: #2c4eda;
 }
 
-button[type="add"]:active + form{
-	display: block;
-}
 
 .card:hover{
 	border-color: yellow;
